@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* General */
+body
+{
+    font-family: 'Marhey', cursive;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+.non-active
+{
+    color:  #B8BECD;
+}
+/* Buttons */
+.btn-outline-success
+{
+    color: #FB8F1D;
+    background-color: #FFFFFF;
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    padding: .5rem 2.875rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline-success:hover
+{
+    color: #FB8F1D;
+    background-color: #FFFFFF;
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    transform: scale(1.1,1.1);
+}
+.btn-outline-secondary
+{   
+    color: #FFFFFF;
+    background-color: #FB8F1D;
+    border: 1px solid #FB8F1D;
+    padding: .5rem 2.875rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline-secondary:hover
+{
+    color: #FFFFFF;
+    background-color: #FB8F1D;
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    transform: scale(1.1, 1.1);
+}
+/* Images */
+.card img
+{
+    height: 14.5625rem;
+    border-top-left-radius: 5%;
+    border-top-Right-radius: 5%;
+}
+
+/* Card Titles */
+.card-title
+{
+    font-size: 1.1875rem;
+    font-weight: 700;
+}
+.card-text
+{
+    color: #7D7987;
+    width: 80%;
+    font-size: .9375rem; 
+    line-height:1.625rem ;
+}
+.card
+{
+    border: none;
+}
+
+/* Card Link */
+.card-link
+{
+    font-size: .9375rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    color:#FB8F1D;
+}
+/* Text */
+.title
+{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+.mx-5 {
+    margin-right: 3rem !important;
+    margin-left: 0rem!important;
+}
+.footer-text
+{
+    line-height: 28px;
+    color: #848484;
+    font-size: 1rem;
+}
+.try
+{
+    padding-top: 0.9rem;
+}
+.row
+{
+    align-items: baseline;
+}
+.texts h1
+{
+    font-size: 4rem;
+    margin-bottom: 2.625rem;
+}
+.texts h6
+{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 3rem;
+}
+.texts h6::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    border: 1px solid;
+    width: 2rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 1.3125rem;
+}
+/* Paddings */
+.padd
+{
+    padding-left: 6.375rem;
+}
+.padd2
+{
+    padding-right: 6.375rem;
+}
+.padd-btm-tp
+{
+    padding-bottom: 10.5625rem;
+    padding-top: 7.125rem;
+}
+.padd3
+{
+    padding-right: 12.0625rem;
+}
+/* Different Font Sizes  */
+.guides
+{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.explore
+{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.bold
+{
+    font-weight: 800;
+}
+/* Positions */
+.parent
+{
+    position: relative;
+}
+
+.position
+{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    border-top-right-radius: .70rem;
+    padding: .625rem .625rem 0 0 ;
+}
+
+.arrow
+{
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+    padding: .625rem .625rem 0 0.525rem;
+    background-color: white;
+    cursor: pointer;
+}
+/* Star Rating */
+.rate {
+
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label {
+    position: relative;
+    width: 2rem;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important;
+}
+
+.rating>input:checked~label:before {
+    opacity: 1;
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4;
+}
+
+
+.rating-submit {
+    border-radius: 15px;
+    color: #fff;
+}
+
+.rating-submit:hover {
+
+    color: #fff;
+}
+.padds
+{
+    margin-top: 2.0625rem;
+}
+/* --------------------------------------- */
+/*  Query */
+@media (max-width:992px)
+{
+    .texts
+    {
+        
+        padding-left: 0;
+    }
+}
